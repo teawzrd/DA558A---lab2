@@ -1,0 +1,11 @@
+.quizForm {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+
+
+}
+
+.user_information {
+    background-color: antiquewhite;
+}
