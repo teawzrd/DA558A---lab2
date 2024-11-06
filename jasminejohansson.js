@@ -16,30 +16,30 @@ let question5 = document.getElementById("question5").value;
 
 /*check if the requiered fields are empty*/
 if (firstName === "") {
-    errors.push("First name is requiered");
+    errors.push("- First name is required");
 }
 
 if (lastName ==="") {
-    errors.push("Last name is is requiered");
+    errors.push("- Last name is required");
 }
 
 if (emailAdress ==="") {
-    errors.push("Email is requiered");
+    errors.push("- Email is required");
 }
 
 /* if the error array is empty, check for the valid format*/
 if (!errors.length){
    /*test first name valid*/
     if (!/^[a-zA-Z]+$/.test(firstName)) {
-        errors.push("first name must only contain letters");
+        errors.push("- First name must only contain letters");
     }
 
     if (!/^[a-zA-Z]+$/.test(lastName)){
-        errors.push("last name must only contain letters");
+        errors.push("- Last name must only contain letters");
     }
 
     if (!validRegex.test(emailAdress)){
-        errors.push("you have to enter a valid email");
+        errors.push("- You have to enter a valid email");
     }
 
 
@@ -47,11 +47,11 @@ if (!errors.length){
 
 /*Check if the requiered questions are empty*/ 
 if (question1 ===""){
-    errors.push("You must answer question 1")
+    errors.push("- You must answer question 1")
 }
 
 if (question5 ===""){
-    errors.push("You must answer question 5")
+    errors.push("- You must answer question 5")
 }
 
 
