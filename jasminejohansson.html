@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Lab 2</title>
+    <link rel="stylesheet" href="styles.css" 
+</head>
+<body>
+    <h1 class="title">Quiz</h1>
+    <form id="quizForm"> 
+    
+        <div class="user_information">
 
+            <legend>User Information</legend>
+
+            <div class="form-group">
+                <!--User First Name - only letters allowed-->
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" required pattern="[A-Za-z]+" title="Only letters are allowed">
+                <span class="requiredStar">*</span>
+            </div>
+
+            <div class="form-group">
+                <!--User last name - only letters allowed-->
+                <label for="firstName">Last Name:</label><br>
+                <input type="text" id="lastName" required pattern="[A-Za-z]+" title="Only letters are allowed">
+                <span class="requiredStar">*</span>
+            </div>
+
+            <div class="form-group">
+                <!--User email - valid email format-->
+                <label for="firstName">Email:</label><br>
+                <input type="email" id="emailAdress" required pattern=".+@example\.com" title="Only valid email is allowed">
+                <span class="requiredStar">*</span>
+            </div>
+
+        </div>
+
+        <h2 class="Quiz-titel">Quiz Questions</h2>
+    
+        <!--Question 1 - -->
+        <div class="form-group">
+            <label for="question1">1. What is your favourite color?</label><br>
+            <input type="text" id="question1" required pattern="[A-Za-z]+" title="Only letters are allowed">
+            <span class="requiredStar">*</span>
+        </div>
+
+         <!--Question 2 - -->
+         <div class="form-group">
+            <label for="question2">2. What is your favourite fruit</label><br>
+            <input type="text" id="question2" required pattern="[A-Za-z]+" title="Only letters are allowed">
+            <span class="requiredStar">*</span>
+        </div>
+
+         <!--Question 3 - -->
+         <div class="form-group">
+            <label for="question3">3. What is the capital of France?</label><br>
+            <input type="radio" id="question2" required pattern="[A-Za-z]+" title="Only letters are allowed">
+            <span class="requiredStar">*</span>
+        </div>
+
+
+    </form>
+
+      <!-- js link -->
+      <script src="jasminejohanson.js"></script>
+
+
+</body>
+</html>l
