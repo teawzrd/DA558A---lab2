@@ -1,11 +1,52 @@
-.quizForm {
+body{
+    height: 100%;
+    margin: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: aqua;
 
 
 }
 
+#quizForm {
+    padding: 15 px;
+    background-color: aqua;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
 .user_information {
     background-color: antiquewhite;
+}
+
+.form-group {
+    padding: 15px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+button{
+    background-color: #00339A;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px;
+    cursor: pointer;
+   
+}
+
+button:hover{
+ background-color: #0036B1;
+}
+
+.requiredStar {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    width: 90%;
+    box-sizing: border-box;
+    position: relative;
 }
