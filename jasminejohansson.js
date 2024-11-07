@@ -58,9 +58,20 @@ if (question5 ===""){
 /*Show error is there is one*/
 if (errors.length > 0) {
     console.log(errors);
-    alert(errors.join("\n"));
+
+    /*alert(errors.join("\n"));*/
+    let errorList = document.getElementById("errorMessages");
+    errorList.innerHTML = ""; //clear if any prevcious error messages
+    errorList.innerHTML = "<ul><li>" + errors.join("</li><li>") + ("</li></ul>");
+
+    
+
 } else{     
-    alert("it works")
+   const successMessage = document.getElementById("successMessage");
+   successMessage.innerHTML = "Form submitted"
+
+   const errorList = document.getElementById("errorMessages");
+   errorList.innerHTML = "";
     
 }
 
