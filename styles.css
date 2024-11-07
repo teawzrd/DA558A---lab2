@@ -52,6 +52,7 @@ button:hover{
     display: inline-block;
     margin-left: 5px;
     font-weight: bold;
+    color: red;
 }
 
 input[type="text"], input[type="email"] {
