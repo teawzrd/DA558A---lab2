@@ -17,6 +17,10 @@ let question5 = document.getElementById("question5").value;
 
 let errorList = document.getElementById("errorMessages");
 
+let paris = document.getElementById("paris").checked;
+let berlin = document.getElementById("berlin").checked;
+let london = document.getElementById("london").checked;
+
 
 /*check if the requiered fields are empty*/
 if (firstName === "") {
@@ -56,6 +60,11 @@ if (question1 ===""){
 
 if (question5 ===""){
     errors.push("You must answer question 5")
+}
+
+/*check if the radio buttons are not checked and in that cause push error*/ 
+if (!paris && !berlin && !london){
+    errors.push("You have to answer question 3, by checking one radio button")
 }
 
 
